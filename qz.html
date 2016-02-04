@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		<script src="table.js"></script>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+	</head>
+	<body ng-app="" ng-controller="OrderFormController">
+		<h1 class="text-center">Table</h1>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>City</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="row in records">
+   		 			<td>{{row.Name}}</td>
+  					<td>{{row.City}}</td>
+   					<td>{{row.Country}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</body>
+</html>
